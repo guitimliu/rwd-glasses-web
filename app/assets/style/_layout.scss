@@ -1,0 +1,122 @@
+.header {
+    padding: 30px 88px;
+    background-color: $color-darkRed;
+    @include pad {
+        padding: 30px 39px;
+    }
+    @include mobile {
+        padding: 10px 0 0 0;
+    }
+    h1 {
+        @include mobile {
+            width: 100%;
+            padding-bottom: 10px;
+        }
+    }
+}
+
+.header-menu {
+    @include mobile {
+        width: 100%;
+    }
+}
+
+.header-menu li {
+    padding-right: 64px;
+    &:nth-last-child(1) {
+        padding-right: 0;
+    }
+    @include pad {
+        padding-right: 40px;
+        &:nth-last-child(1) {
+            padding-right: 0;
+        }
+    }
+    @include mobile {
+        padding-right: 0;
+        width: 50%;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        border: 1px solid $color-white;
+    }
+}
+
+.logo {
+    margin: auto;
+    width: 80px;
+    height: 48.57px;
+    background-image: url(../images/logo.png);
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.header a {
+    color: $color-white;
+    text-decoration: none;
+    font-size: $font-size-2;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.footer {
+    background-color: $color-darkRed;
+    color: $color-white;
+}
+
+.footer a {
+    color: $color-white;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.icon {
+    width: 36px;
+    height: 36px;
+    margin-right: 20px;
+}
+
+.footer-menu {
+    padding-top: 44px;
+    padding-bottom: 36px;
+    @include mobile {
+        display: none;
+    }
+}
+
+.hr-white {
+    background-color: $color-white;
+}
+
+.declare {
+    padding-bottom: 39px;
+}
+
+.footer-links-item {
+    padding-right: 48px;
+    &:nth-last-child(1) {
+        padding-right: 0;
+    }
+    @include pad {
+        padding-right: 40px;
+        &:nth-last-child(1) {
+            padding-right: 0;
+        }
+    }
+}
+
+.social-links-item {
+    padding-right: 32px;
+    &:nth-last-child(1) {
+        padding-right: 0;
+    }
+    @include pad {
+        padding-right: 24px;
+        &:nth-last-child(1) {
+            padding-right: 0;
+        }
+    }
+}

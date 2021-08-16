@@ -1,0 +1,118 @@
+.container {
+    width: 1110px;
+    max-width: 100%;
+    margin: 0 auto;
+    @include pad {
+        width: 690px;
+    }
+    @include mobile {
+        width: 345px;
+    }
+}
+
+/* 排版方式 */
+
+.d-block {
+    display: block;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.flex-wrap-wrap {
+    flex-wrap: wrap;
+}
+
+.justify-content-flex-end {
+    justify-content: flex-end;
+}
+
+.justify-content-space-between {
+    justify-content: space-between;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+/* 文字排版 */
+
+.text-align-center {
+    text-align: center;
+}
+
+.fw-bold {
+    font-weight: bold;
+}
+
+.ml-2 {
+    margin-left: 16px;
+}
+
+.ml-4 {
+    margin-left: $margin * 4;
+}
+
+.ml-6 {
+    margin-left: $margin * 6;
+}
+
+.ml-8 {
+    margin-left: $margin * 8;
+}
+
+.mr-6 {
+    margin-right: $margin * 6;
+}
+
+.mb-1 {
+    margin-bottom: $margin;
+}
+
+.mb-2 {
+    margin-bottom: $margin * 2;
+}
+
+.mb-3 {
+    margin-bottom: $margin * 3;
+}
+.mb-4 {
+    margin-bottom: $margin * 4;
+}
+.mb-6 {
+    margin-bottom: $margin * 6;
+}
+
+.pt-1 {
+    padding-top: $padding;
+}
+.pt-4 {
+    padding-top: $padding * 4;
+}
+.pt-6 {
+    padding-top: $padding * 6;
+}
+.pb-1 {
+    padding-bottom: $padding;
+}
+.pb-2 {
+    padding-bottom: $padding * 2;
+}
+.pb-4 {
+    padding-bottom: $padding * 4;
+}
+.pb-8 {
+    padding-bottom: $padding * 8;
+}
+.pb-16 {
+    padding-bottom: $padding * 16;
+}

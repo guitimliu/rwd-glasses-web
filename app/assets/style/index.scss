@@ -1,0 +1,149 @@
+@import 'style.scss';
+
+.banner {
+    min-width: 100%;
+    height: 840px;
+    background-image: url(../images/banner.png);
+    background-position: center center;
+    background-size: cover;
+}
+
+.banner-body {
+    position: relative;
+    text-align: right;
+    color: $color-brown;
+    font-weight: bold;
+    line-height: 1.5;
+    top: 50%;
+    right: 20%;
+    @include pad {
+        right: 10%;
+    }
+    @include mobile {
+        right: 15px;
+    }
+}
+
+.banner-body p {
+    font-size: 36px;
+    @include pad {
+        font-size: $font-size-2;
+    }
+    @include mobile {
+        font-size: $font-size-1;
+    }
+}
+
+.banner-body h2 {
+    font-size: 64px;
+    @include pad {
+        font-size: 48px;
+    }
+    @include mobile {
+        font-size: 32px;
+    }
+}
+
+.bg-darkPink {
+    background-color: $color-darkPink;
+}
+
+.introduction {
+    li {
+        width: 20%;
+        margin-right: 30px;
+        @include pad {
+            width: 45%;
+        }
+        @include mobile {
+            width: 100%;
+        }
+    }
+    h3 {
+        text-align: center;
+        font-size: $font-size-3;
+        color: $color-brown;
+        font-weight: bold;
+        margin-bottom: 8px;
+    }
+}
+
+.subTitle {
+    text-align: center;
+    color: $color-brown;
+    font-weight: bold;
+    font-size: 48px;
+}
+
+.classic .item {
+    display: flex;
+    align-items: center;
+    color: $color-darkRed;
+
+    &:nth-child(even) {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    img {
+        width: 635px;
+        height: 320px;
+    }
+}
+
+.joint-name {
+    background-image: url(../images/bg.png);
+
+    .subTitle {
+        color: $color-white;
+    }
+    .item {
+        width: 49%;
+    }
+    .item img {
+        width: 100%;
+    }
+}
+
+.item-img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: auto;
+    height: 100px;
+}
+
+.customer .item {
+    width: 22%;
+    height: 460px;
+    margin: 0 15px;
+    border: 1px solid #DEE2E6;
+    border-radius: 4px;
+    img {
+        width: 100%;
+        border-radius: 4px 4px 1px 1px;
+    }
+    .comment-text {
+        padding: 0 16px;
+    }
+}
+
+.contact-form {
+    width: 730px;
+    margin: auto;
+
+    &-input {
+        border: 1px solid $color-black;
+        padding: 14px 16px;
+        background-color: transparent;
+    }
+
+    &-submit {
+        background-color: $color-darkRed;
+        border: 0;
+        color: $color-white;
+        width: 350px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+}
